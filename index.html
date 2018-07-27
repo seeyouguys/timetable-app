@@ -32,7 +32,7 @@
 	
 					<div class="col-sm-8">
 						<form id="add-task-form">
-							<input name="text" placeholder="" value="activity" type="text">
+							<input name="text" placeholder="" value="activity" type="text" maxlength="40">
 							<input name="time-start" value="13:30"type="time">
 							<input name="time-end" value="14:00"type="time">
 						</form>
@@ -49,24 +49,6 @@
 
 		<ul id="task-container" class="list-group list-group-flush">
 			<!-- JS rendered tasks go here -->
-		</ul>
-			<li class="list-group-item">
-				<div class="row">
-					<div class="col-sm-7">
-						<span class="task-text">Лист груп айтем текст</span>
-					</div>
-
-					<div class="task-controls hidden offset-sm-1 col-sm">
-						<button class="btn btn-md btn-danger">X</button>
-						<button class="btn btn-md btn-warning">E</button>
-					</div>
-
-					<div class="task-time col-sm-5 text-center text-muted">
-						13:30 - 15:00
-					</div>
-
-				</div>
-			</li>
 	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
