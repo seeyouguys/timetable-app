@@ -1,6 +1,6 @@
 const tasks = getTasks() || getDemoTasks()
 renderTasks(tasks)
-
+$('#date').text(moment().format('dddd, D'))
 
 $('.add-task-title').click(function (event) {
 	fadeSwitch($('.add-task-title'), $('.add-task-inputs'), 85)
