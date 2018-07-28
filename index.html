@@ -12,45 +12,55 @@
 <body>
 	
 	<!-- List of tasks -->
-
-	<div id="timetable" class="mx-auto card">
-
-		<div class="card-header cute-bg">
-			<h1>TIMETABLE</h1>
-		</div>
-
-		<div id="new-task" class="card-header text-center">
-			<div class="add-task-title">Add new task...</div>
-			
-			
-			<div class="add-task-inputs hidden">
-				<div class="row">
-					
-					<div class="offset-md-1 col-sm-1">
-						<button id="btn-cancel" form="add-task-form" class="btn btn-sm btn-danger" type="button">X</button>
-					</div>
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-5">
+			<div id="clock">
 	
-					<div class="col-sm-8">
-						<form id="add-task-form">
-							<input name="text" placeholder="" value="activity" type="text" maxlength="40">
-							<input name="time-start" value="13:30"type="time">
-							<input name="time-end" value="14:00"type="time">
-						</form>
-					</div>
-	
-					<div class="col-sm-1">
-						<button id="btn-add" form="add-task-form" class="btn btn-sm" type="submit">Add</button>
-					</div>
-				</div>
 			</div>
-
-
 		</div>
-
-		<ul id="task-container" class="list-group list-group-flush">
-			<!-- JS rendered tasks go here -->
+		<div class="offset-lg-1 col-sm-6">
+			<div id="timetable" class="card">
+		
+				<div class="card-header cute-bg">
+					<h1 id="date">MONDAY, 28</h1>
+				</div>
+		
+				<div id="new-task" class="card-header text-center">
+					<div class="add-task-title">Add new task...</div>
+					
+					
+					<div class="add-task-inputs hidden">
+						<div class="row">
+							
+							<div class="offset-md-1 col-sm-1">
+								<button id="btn-cancel" form="add-task-form" class="btn btn-sm btn-danger" type="button">X</button>
+							</div>
+			
+							<div class="col-sm-8">
+								<form id="add-task-form">
+									<input name="text" autofocus placeholder="" value="activity" type="text" maxlength="40">
+									<input name="time-start" value="13:30"type="time">
+									<input name="time-end" value="14:00"type="time">
+								</form>
+							</div>
+			
+							<div class="col-sm-1">
+								<button id="btn-add" form="add-task-form" class="btn btn-sm" type="submit">Add</button>
+							</div>
+						</div>
+					</div>
+		
+		
+				</div>
+		
+				<ul id="task-container" class="list-group list-group-flush">
+					<!-- JS rendered tasks go here -->
+		</div>
+		</div>
 	</div>
-
+	</div>
+	
 	<script src="js/moment.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/main-functions.js"></script>

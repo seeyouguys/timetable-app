@@ -11,8 +11,21 @@
 	margin: 0;
 }
 #timetable {
-	width: 40rem;
+	min-width: 37rem;
+	max-width: 40rem;
 	height: 100vh;
+}
+
+.list-group-item {
+	overflow: hidden;
+}
+
+#clock {
+	border: #49a394 dashed 4px;
+	min-width: 37rem;
+	max-width: 40rem;
+	height: 100vh;
+	float: right;
 }
 
 .hidden {
