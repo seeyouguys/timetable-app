@@ -16,7 +16,7 @@
 		<div class="row">
 		<div class="col-sm-5">
 			<div id="clock">
-	
+				<canvas id="chartClock" width="400" height="400"></canvas>
 			</div>
 		</div>
 		<div class="offset-lg-1 col-sm-6">
@@ -56,16 +56,20 @@
 		
 				<ul id="task-container" class="list-group list-group-flush">
 					<!-- JS rendered tasks go here -->
+				</ul>
 		</div>
 		</div>
 	</div>
 	</div>
 	
+	<!-- third party libs -->
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/moment.min.js"></script>
 	<script src="js/Chart.min.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/main-functions.js"></script>
 	<script src="js/uuidv4.js"></script>
+	<!-- mine shit -->
+	<script src="js/main-functions.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/chartClock.js"></script>
 </body>
 </html>

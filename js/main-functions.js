@@ -88,3 +88,8 @@ const fadeSwitch = function (firstItem, secondItem, fadetime) {
 		secondItem.fadeToggle(fadetime, () => firstItem.fadeToggle(fadetime))
 	}
 }
+
+// Generate random integer
+const getRandomInt = function (min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+}

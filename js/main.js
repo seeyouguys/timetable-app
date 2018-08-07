@@ -38,7 +38,8 @@ $('#add-task-form').submit(function (event) {
 		id: uuidv4(),
 		text: form['text'].value,
 		startTime: form['time-start'].value,
-		endTime: form['time-end'].value
+		endTime: form['time-end'].value,
+		priority: getRandomInt(40, 50)
 	}
 	if (task.text && task.startTime && task.endTime) {
 		tasks.push(task)
